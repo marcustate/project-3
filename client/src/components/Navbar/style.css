@@ -1,0 +1,19 @@
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+}
+
+a.nav-link {
+    color: wheat;
+    font-size: 20px;
+}
+
+a.nav-link.active {
+    color: wheat;
+    font-size: 20px;
+}
+
+a.navbar-brand {
+    color: wheat;
+    font-size: 30px;
+    font-weight: bold;
+}
