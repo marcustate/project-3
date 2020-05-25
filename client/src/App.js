@@ -6,6 +6,8 @@ import Header from "../src/components/Header";
 import "./index.css";
 import System from "../src/pages/System";
 import Tracker from "../src/pages/Tracker";
+import Search from "../src/pages/Search";
+import GeneralInformation from "../src/pages/GeneralInformation";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
         <Route path="/tracker" component={Tracker} />
+        <Route path="/search" component={Search} />
+        <Route path="/generalInformation" component={GeneralInformation} />
       </div>
     </Router>
   );

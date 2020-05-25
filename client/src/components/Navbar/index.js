@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-secondary bg-secondary">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
                 <Link className="navbar-brand" to="/">Cell</Link>
 
