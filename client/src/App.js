@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "../src/components/Navbar";
 import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 import "./index.css";
 import System from "../src/pages/System";
 import Tracker from "../src/pages/Tracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
+import ResourcesPage from "../src/pages/ResourcesPage";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
+        <Route path="/resourcesPage" component={ResourcesPage} />
+
       </div>
 
       <Footer />
