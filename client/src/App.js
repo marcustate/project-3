@@ -8,7 +8,7 @@ import System from "../src/pages/System";
 import Tracker from "../src/pages/Tracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
-
+import SearchButtons from "../src/pages/SearchButtons";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/tracker" component={Tracker} />
         <Route path="/search" component={Search} />
         <Route path="/generalInformation" component={GeneralInformation} />
+        <Route path="/searchButtons" component={SearchButtons} />
       </div>
     </Router>
   );
