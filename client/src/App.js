@@ -23,6 +23,8 @@ function App() {
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
       </div>
+
+      <Footer />
     </Router>
   );
 }
