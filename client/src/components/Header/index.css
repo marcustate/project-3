@@ -2,3 +2,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.header {
+    background-color:#e0e2e4 ;
+}
