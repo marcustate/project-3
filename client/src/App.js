@@ -9,6 +9,7 @@ import Tracker from "../src/pages/Tracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
