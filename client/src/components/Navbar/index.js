@@ -38,6 +38,22 @@ function Navbar() {
                         </li>
 
                         <li className="nav-item">
+                            <Link to="/tracker"
+                                className={window.location.pathname === "/tracker" ? "nav-link active" : "nav-link"}
+                            >
+                                Tracker
+                        </Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/SearchButtons"
+                                className={window.location.pathname === "/SearchButtons" ? "nav-link active" : "nav-link"}
+                            >
+                                SearchButtons
+                        </Link>
+                        </li>
+
+                        <li className="nav-item">
                             <Link to="/search"
                                 className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
                             >
