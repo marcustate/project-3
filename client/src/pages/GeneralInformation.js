@@ -4,6 +4,17 @@ import './generalInformation.css'
 function GeneralInformation() {
     return (
         <div className="maincontainer">
+
+
+            <div className="headline">
+
+                <p>
+                    <h1>My Sickle Cell Tracker</h1>
+                    <h3>Welcome! We wanted to create a place where you can learn about your disease and learn about some of the things you can do to stay healthy. Sickle Cell is a challenging disease for many people but with education, discipline and understanding it can be well managed and you can live a fulfilled happy productive life. Let’s check out some of the resources below to learn a little more about our disease.</h3>
+                </p>
+
+
+            </div>
             <header>Understanding Sickle Cell Anemia</header>
             <article>
                 <h3>What It Is</h3>
@@ -60,25 +71,18 @@ function GeneralInformation() {
 
 
             <aside>
-                <h6 className="title">How Can I Better Manage My Disease?</h6>
-                <ul className="list-group">
-                    <li className="list-item">Stay Hydrated</li>
-                    <hr></hr>
-                    <li className="list-item">Learn My Triggers for Pain Crises</li>
-                    <hr></hr>
-                    <li className="list-item">Eat a Well Balanced Diet</li>
-                    <hr></hr>
-                    <li className="list-item">Prevent Infections with Good Hygiene</li>
-                    <hr></hr>
-                    <li className="list-item">Understand Your Norms and what they mean for you</li>
-                    <hr></hr>
-                    <li className="list-item">Surround Yourself With a Strong Support System</li>
-                </ul>
-                <div className="tracker-link">
-                    <h5>Manage by Keeping Track</h5>
-                    <p >Please use the link below to track your health stats and journal about your daily health condition. This will provide you with insights to live a healthy and happy life.</p>
-                    <button type="button" class="tracker-button">Track Info</button>
+
+
+
+                <div>
+                    <h3 className="overview">TedEd Overview of Sickle Cell Anemia</h3>
                 </div>
+                <div className="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hRnrIpUMyZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+
 
 
             </aside>
