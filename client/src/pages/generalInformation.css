@@ -4,9 +4,13 @@
     
 }
 
+.headline {
+    grid-area: headline;
+    text-align: center;
+}
+
 header {
-    grid-area: hdr;
-    
+    grid-area: hdr;    
     text-align: center;
     font-size: 50px;
     border-radius: 1px;
@@ -70,6 +74,7 @@ aside {
     display:grid;
     grid-gap:20px;    
     grid-template-areas: 
+    "headline"
     "hdr"
     "article"
     "aside"
@@ -82,6 +87,7 @@ aside {
         grid-template-columns: 2fr 4fr;
        
         grid-template-areas: 
+        "headline  headline"
         "hdr    hdr"
         "aside  article"
         "foot   foot";
@@ -112,4 +118,16 @@ aside {
 
 .tracker-button {
     background-color:#c8c3cc
+}
+
+.overview {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.video {
+    align-content: center;   
+    padding: 80px;
+    margin-left: 65px;
 }

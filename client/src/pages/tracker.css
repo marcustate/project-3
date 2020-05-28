@@ -100,7 +100,7 @@ aside {
 
 @media(min-width: 640px ) {
     .maincontainer {
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 2fr 6fr;
        
         grid-template-areas: 
         "headline    headline"
@@ -110,3 +110,37 @@ aside {
     }
 }
 
+.exercPic {
+margin: 10Px;
+align-content: left;   
+padding: 10px;
+margin-left: 5px;
+/* border-radius: 10px;
+border-style: solid;
+border-color: black; */
+
+}
+
+.journPic {
+    margin: 10px;
+    align-content: left;   
+    padding: 10px;
+    margin-left: 250px;
+
+}
+
+.waterPic{
+    margin: 10px;
+    align-content: left;   
+    padding: 10px;
+    margin-left: 450px;
+
+}
+
+.graphPic {
+    margin: 10px;
+    align-content: left;   
+    padding: 10px;
+    margin-left: 650px;
+
+}

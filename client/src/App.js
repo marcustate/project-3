@@ -2,23 +2,23 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "../src/components/Navbar";
-// import Header from "../src/components/Header";
-// import Footer from "../src/components/Footer";
+import Footer from "../src/components/Footer";
 import "./index.css";
 import System from "../src/pages/System";
 import Wellness from "./pages/wellnessTracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
-import Footer from "../src/components/Footer";
-// import ResourcesPage from "../src/pages/ResourcesPage";
+
+// import ResourcesPage from "../src/pages/ResourcesPages";
+
+
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        {/* <Header /> */}
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
         <Route path="/wellness" component={Wellness} />
