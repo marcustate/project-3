@@ -1,7 +1,7 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+* {
+    box-sizing:border-box;
+    
+    
 }
 
 .headline {
@@ -9,9 +9,8 @@
     text-align: center;
 }
 
-.header {
-    grid-area: hdr;
-    
+header {
+    grid-area: hdr;    
     text-align: center;
     font-size: 50px;
     border-radius: 1px;
@@ -21,27 +20,7 @@
     
 
 }
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.panel {
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 1 1 200px;
-    font-size: 30px;
-}
     
-.innerheader {
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 0 1 100%;
-    grid-column: 1 / -1;
-
-}
-
 
 footer {
     grid-area: foot;
@@ -73,7 +52,23 @@ aside {
     
 }
 
+.title {
+    font-size: 30px;
+    color: #8fb0b3;
 
+}
+
+.list-group{
+    margin-bottom:50px ;
+    padding:5px;
+    
+}
+
+.list-item {
+    font-size: 25px;
+    background-color: #c8c3cc
+   
+}
 
 .maincontainer {
     display:grid;
@@ -87,26 +82,52 @@ aside {
   
 }
 
-.impacts {
-    font-weight: bolder;
-    color: #8ca3a3
-}
-
-.aside-title {
-    font-weight: bolder;
-    color:#563f46;
-    font-size: 30px;
-}
-
 @media(min-width: 640px ) {
     .maincontainer {
         grid-template-columns: 2fr 4fr;
        
         grid-template-areas: 
-        "headline    headline"
+        "headline  headline"
         "hdr    hdr"
         "aside  article"
         "foot   foot";
     }
 }
 
+.table {
+    font-size: 20px;
+}
+
+.card {
+    background-color: lightslategrey;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.tracker-link {
+    margin: 50px;
+    padding: 10px;
+ border-radius: 15px;
+ border-style: solid;
+
+ background-color:#8ca3a3;
+
+}
+
+.tracker-button {
+    background-color:#c8c3cc
+}
+
+.overview {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.video {
+    align-content: center;   
+    padding: 80px;
+    margin-left: 65px;
+}

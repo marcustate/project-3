@@ -27,12 +27,7 @@
     flex-wrap: wrap;
 }
 
-.panel {
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 1 1 200px;
-    font-size: 30px;
-}
+
     
 .innerheader {
     margin-left: 5px;
@@ -87,20 +82,11 @@ aside {
   
 }
 
-.impacts {
-    font-weight: bolder;
-    color: #8ca3a3
-}
 
-.aside-title {
-    font-weight: bolder;
-    color:#563f46;
-    font-size: 30px;
-}
 
 @media(min-width: 640px ) {
     .maincontainer {
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 2fr 6fr;
        
         grid-template-areas: 
         "headline    headline"
@@ -108,5 +94,17 @@ aside {
         "aside  article"
         "foot   foot";
     }
+}
+
+.quest {
+    font-size: 30px;
+}
+.searchPic {
+
+    align-content: center;   
+    padding: 80px;
+    margin-left: 65px;
+   
+
 }
 
