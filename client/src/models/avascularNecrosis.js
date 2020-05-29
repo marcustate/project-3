@@ -26,7 +26,7 @@ function AvascularNecrosis() {
                             <th scope="row">1</th>
                             <td>Avascular Necrosis</td>
                             <td>The death of bone tissue due to a lack of blood supply.</td>
-                            <td>	There are several treatments that can help to relieve pain. Physical therapy and exercises may be recommended. In severe cases, surgery may be recommended.</td>
+                            <td>There are several treatments that can help to relieve pain. Physical therapy and exercises may be recommended. In severe cases, surgery may be recommended.</td>
                         </tr>
 
                     </tbody>
