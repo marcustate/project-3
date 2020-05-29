@@ -1,9 +1,16 @@
 import React from "react";
-import './searchbuttons.css'
-import SearchPic from './assets/searchPic.jpeg'
+import './searchbuttons.css';
+import SearchPic from './assets/searchPic.jpeg';
+import '../models';
+import { Link, Route, useLocation } from 'react-router-dom';
+import AcuteChestSyndrome from '../models/acuteChestSyndrome'
+import AvascularNecrosis from '../models/avascularNecrosis';
+import Priapism from '../models/priapism';
+import Retinopathy from '../models/retinopathy';
 
 
 function SearchButtons() {
+  const location = useLocation();
   return (
     <div className="maincontainer">
 
@@ -16,15 +23,21 @@ function SearchButtons() {
 
 
       </div>
-      <header class="innerheader">Search </header>
+      <header class="innerheader">Search</header>
       <article>
         <div>
-          <div className="list-group">
+          <div className="buttons">
+            <Link className={`list-group-item list-group-item-action ${location.pathname === "/SearchButtons/acuteChestSyndrome" ? "active" : ""}`} to="/SearchButtons/acuteChestSyndrome">Acute Chest Syndrome</Link>
+            <Link className={`list-group-item list-group-item-action ${location.pathname === "/SearchButtons/avascularNecrosis" ? "active" : ""}`} to="/SearchButtons/avascularNecrosis">Avascular Necrosis</Link>
+            <Link className={`list-group-item list-group-item-action ${location.pathname === "/SearchButtons/priapism" ? "active" : ""}`} to="/SearchButtons/priapism">Priapism</Link>
+            <Link className={`list-group-item list-group-item-action ${location.pathname === "/SearchButtons/retinopathy" ? "active" : ""}`} to="/SearchButtons/retinopathy">Retinopathy</Link>
+          </div>
 
-            <button type="button" className="list-group-item list-group-item-action active">Acute Chest Syndrome</button>
-            <button type="button" className="list-group-item list-group-item-action">AVasular Necrosis</button>
-            <button type="button" className="list-group-item list-group-item-action">Priapism</button>
-            <button type="button" className="list-group-item list-group-item-action" disabled>Retinopathy</button>
+          <div className="results">
+            <Route exact path = "/SearchButtons/acuteChestSyndrome" component={AcuteChestSyndrome} />
+            <Route exact path = "/SearchButtons/avascularNecrosis" component={AvascularNecrosis} />
+            <Route exact path = "/SearchButtons/priapism" component={Priapism} />
+            <Route exact path = "/SearchButtons/retinopathy" component={Retinopathy} />
           </div>
 
         </div>
