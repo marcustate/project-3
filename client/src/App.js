@@ -9,6 +9,7 @@ import Wellness from "./pages/wellnessTracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
+import Footer from "../src/components/Footer";
 
 // import ResourcesPage from "../src/pages/ResourcesPages";
 
