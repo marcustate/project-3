@@ -1,7 +1,7 @@
 import React from "react";
 // import loginImg from "../pages/assets/";
 
-export class Login extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -34,3 +34,5 @@ export class Login extends React.Component {
     );
   }
 }
+
+export default Login;
