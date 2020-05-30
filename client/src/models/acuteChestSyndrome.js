@@ -1,8 +1,8 @@
 import React from 'react';
-import './search.css'
 
 
-function retinopathy() {
+
+function acuteChestSyndrome() {
     return (
         <div className="maincontainer">
             <div className="row">
@@ -24,9 +24,9 @@ function retinopathy() {
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>PSR/NPR</td>
-                            <td>Retinal vascular disease, or damage to the retina caused by abnormal blood flow.</td>
-                            <td>The goal of therapy for NPSR/PSR is to prevent development of ischemia, infarction and the dreaded complication of neovascularization. Complete ophthalmic examination twice a year is recommended for sickle cell patients (SC,SS, S-thal, etc). Baseline fluorescein angiography may be performed to examine blood flow in the retina and choroid.</td>
+                            <td>Retinopathy</td>
+                            <td>A new Radiodensity on check radiograph accompanied by fever and/or respiratory symptoms</td>
+                            <td>Basic management will include prompt pain relief, incentive spirometry and treatment of bacterial or viral infection. Blood transfusion should be considered early in the hypoxic patient. A simple (top-up) transfusion may suffice in early or less severe disease but exchange transfusion will be necessary if there are features of clinical severity or a lack of response to simple transfusion.</td>
                         </tr>
 
                     </tbody>
@@ -39,4 +39,4 @@ function retinopathy() {
 
     )
 }
-export default Retinopathy;
+export default acuteChestSyndrome;
