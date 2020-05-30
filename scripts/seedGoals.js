@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const db2 = require("../models/goal");
+const db = require("../models");
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/wellnesstrack");
+    process.env.MONGODB_URI || "mongodb://localhost/doctors");
 
     const goalSeed = [
     {
@@ -11,9 +11,9 @@ mongoose.connect(
     }
 ];
 
-db2.Goal 
+db.Goal 
 .remove({})
-.then(() => db2.Goal.collection.insertMany(goalSeed))
+.then(() => db.Goal.collection.insertMany(goalSeed))
 .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
