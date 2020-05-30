@@ -1,5 +1,6 @@
-const router = require("express").Router();
 const doctorsController = ("../controllers/doctorsController");
+let express = require("express");
+let router = express.Router();
 
 router.route("/")
     .get(doctorsController.findAll)

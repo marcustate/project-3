@@ -1,3 +1,4 @@
 module.exports = {
-    Doctor: require("./doctor")
+    Doctor: require("./doctor"),
+    Goal: require("./goal")
 };
