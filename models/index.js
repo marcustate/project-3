@@ -1,4 +1,4 @@
 module.exports = {
-    Doctor: require("./schema"),
+    Doctor: require("./doctor"),
     Goal: require("./goal")
 };
