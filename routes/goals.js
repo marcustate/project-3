@@ -1,13 +1,13 @@
 const router = require("express").Router();
-const goalsController = require("../../controllers/goalsController");
+const goalsController = require("../controllers/goalsController");
 
 router.route("/")
   .get(goalsController.findAll)
   .post(goalsController.create);
 
-  router
-  .route("/tracker")
-  .get(goalsController);
+  // router
+  // .route("/tracker")
+  // .get(goalsController);
 
 router
   .route("/:id")
