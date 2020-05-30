@@ -1,12 +1,12 @@
 import React from "react";
 import './searchbuttons.css';
 import SearchPic from './assets/searchPic.jpeg';
-import '../models';
+// import '../models';
 import { Link, Route, useLocation } from 'react-router-dom';
-import AcuteChestSyndrome from '../models/acuteChestSyndrome'
-import AvascularNecrosis from '../models/avascularNecrosis';
-import Priapism from '../models/priapism';
-import Retinopathy from '../models/retinopathy';
+import AcuteChestSyndrome from '../additionalinfo/acuteChestSyndrome'
+import AvascularNecrosis from '../additionalinfo/avascularNecrosis';
+import Priapism from '../additionalinfo/priapism';
+import Retinopathy from '../additionalinfo/retinopathy';
 
 
 function SearchButtons() {
@@ -34,10 +34,10 @@ function SearchButtons() {
           </div>
 
           <div className="results">
-            <Route exact path = "/SearchButtons/acuteChestSyndrome" component={AcuteChestSyndrome} />
-            <Route exact path = "/SearchButtons/avascularNecrosis" component={AvascularNecrosis} />
-            <Route exact path = "/SearchButtons/priapism" component={Priapism} />
-            <Route exact path = "/SearchButtons/retinopathy" component={Retinopathy} />
+            <Route exact path="/SearchButtons/acuteChestSyndrome" component={AcuteChestSyndrome} />
+            <Route exact path="/SearchButtons/avascularNecrosis" component={AvascularNecrosis} />
+            <Route exact path="/SearchButtons/priapism" component={Priapism} />
+            <Route exact path="/SearchButtons/retinopathy" component={Retinopathy} />
           </div>
 
         </div>

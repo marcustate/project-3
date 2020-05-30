@@ -78,7 +78,7 @@ function GeneralInformation() {
                     <h3 className="overview">TedEd Overview of Sickle Cell Anemia</h3>
                 </div>
                 <div className="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hRnrIpUMyZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="sickleCellVideo" width="560" height="315" src="https://www.youtube.com/embed/hRnrIpUMyZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
 
