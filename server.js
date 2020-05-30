@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
+const Schema = require("./client/src/models/schema");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
