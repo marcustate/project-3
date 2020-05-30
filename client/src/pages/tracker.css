@@ -11,15 +11,12 @@
 
 .header {
     grid-area: hdr;
-    
     text-align: center;
     font-size: 50px;
     border-radius: 1px;
     border-color:#563f46;
     border-style: solid;
     background-color: #8ca3a3;
-    
-
 }
 
 .wrapper {
@@ -42,15 +39,13 @@
 
 }
 
-
 footer {
     grid-area: foot;
     border-radius: 1px;
     border-color:#563f46;
     border-style: solid;
     background-color:#8ca3a3;
-    text-align: center;
-   
+    text-align: center;  
 }
 
 article {
@@ -58,8 +53,7 @@ article {
     border-radius: 1px;   
     border-color:#156c73;
     border-style: solid;
-    background-color: #c8c3cc;
-   
+    background-color: #c8c3cc;  
 }
 
 aside {
@@ -67,13 +61,8 @@ aside {
     border-radius: 1px;    
     border-color:#156c73;
     border-style: solid;
-    background-color: #c8c3cc;
-
-   
-    
+    background-color: #c8c3cc;  
 }
-
-
 
 .maincontainer {
     display:grid;
@@ -83,8 +72,7 @@ aside {
     "hdr"
     "article"
     "aside"
-    "foot";
-  
+    "foot"; 
 }
 
 .impacts {
@@ -111,36 +99,32 @@ aside {
 }
 
 .exercPic {
-margin: 10Px;
+margin: 10px;
 align-content: left;   
 padding: 10px;
 margin-left: 5px;
 /* border-radius: 10px;
 border-style: solid;
 border-color: black; */
-
 }
 
 .journPic {
     margin: 10px;
     align-content: left;   
     padding: 10px;
-    margin-left: 250px;
-
+    margin-left: 150px;
 }
 
 .waterPic{
     margin: 10px;
     align-content: left;   
     padding: 10px;
-    margin-left: 450px;
-
+    margin-left: 350px;
 }
 
 .graphPic {
     margin: 10px;
     align-content: left;   
     padding: 10px;
-    margin-left: 650px;
-
+    margin-left: 550px;
 }
