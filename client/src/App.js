@@ -9,9 +9,7 @@ import Tracker from "../src/pages/Tracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
-import Footer from "../src/components/Footer";
-
-// import ResourcesPage from "../src/pages/ResourcesPages";
+import ResourcesPage from "../src/pages/ResourcesPage";
 
 
 
@@ -27,7 +25,7 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
-        {/* <Route path="/resourcesPage" component={ResourcesPage} /> */}
+        <Route path="/resourcesPage" component={ResourcesPage} />
 
 
       </div>
