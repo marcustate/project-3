@@ -1,3 +1,3 @@
-// module.exports = {
-//     Doctor: require("./schema")
-// };
+module.exports = {
+    Doctor: require("./schema")
+};
