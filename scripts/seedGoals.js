@@ -8,6 +8,14 @@ mongoose.connect(
     {
         wellnessInput: "To drink 10 oz of water every two hours",
         date: new Date(Date.now())
+    },
+    {
+        wellnessInput: "To walk 5 miles a day",
+        date: new Date(Date.now())
+    },
+    {
+        wellnessInput: "To take blood pressure every morning and record it",
+        date: new Date(Date.now())
     }
 ];
 
