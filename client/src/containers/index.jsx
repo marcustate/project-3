@@ -1,5 +1,21 @@
-import Login from "./login";
-import Register from "./register";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import Login from './Login';
+import Registration from './Registration';
 
-export { Login } from "./login";
-export { Register } from "./register"
+class Index extends Component {
+	render() {
+		return (
+				<Router>
+					<div className="Index">
+					<Switch>
+						<Route exact path="/register" component={Registration} />
+						<Route exact path="/login" component={Login} />
+						<Redirect from="/" to="login" />
+					</Switch>
+					</div>
+				</Router>
+		);
+	}
+}
+export default Index;
