@@ -1,41 +1,34 @@
-const mongoose = require("mongoose");
-import bcrypt from ("bcrypt-nodejs")
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const userSchema = new mongoose.Schema({
-    name: {
-        type: String
-    },
-    email: {
+//SECTION  collection and schema for Registration
+const UserSchema = new Schema({
+    first_name: {
         type: String,
-        unique: true,
-        lowercase: true
+        match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
+        required: [true, "can't be blank"],
+
     },
-    username: {
+    last_name: {
         type: String,
+        match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
+        required: [true, "can't be blank"]
+    },
+    user_name: {
+        type: String,
+        lowercase: true,
         unique: true,
-        lowercase: true
+        required: [true, "can't be blank"],
+        match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
+        index: true,
     },
     password: {
         type: String,
+        required: true,
+        trim: true
     }
+}, {
+    collection: 'User'
 });
-userSchema.pre('save', function(next){
-    const user = this;
-    bcrypt.genSalt(10, function(err, salt){
-        if (err) { return next(err) }
-        bcrypt.hash(user.password, salt, null, function(err, hash){
-            if (err) { return next(err); }
-            user.password = hash;
-            next()
-        })
-    })
-})
-userSchema.methods.comparedPassword = function(candidatePassword, cb) {
-    bcrypt.compare(candidatePassword, this.password, function(err, good){
-        if (err ) { return cb(err)};
-        cb(null, good);
-    })
-}
-const User = mongoose.model("User", userSchema);
 
-module.exports = User;
+module.exports = mongoose.model('User', UserSchema);

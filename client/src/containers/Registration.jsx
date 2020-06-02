@@ -5,14 +5,12 @@ import {
   UserRegistration,
   UsernameValidation,
 } from '../services/RegistrationService';
-import Message from '../elements/Message';
-import Error from '../elements/Error';
 import {
   REGISTRATION_FIELDS,
   REGISTRATION_MESSAGE,
   COMMON_FIELDS,
   ERROR_IN_REGISTRATION,
-} from '../MessageBundle';
+} from './MessageBundle';
 
 class Registration extends Component {
   constructor(props) {
@@ -158,10 +156,6 @@ class Registration extends Component {
             </div>{' '}
           </div>{' '}
         </form>
-        {' '}
-        {error && <Error message={ERROR_IN_REGISTRATION} />}
-        {' '}
-        {register && <Message message={REGISTRATION_MESSAGE} />}
         {' '}
       </div>
     );

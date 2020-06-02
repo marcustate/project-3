@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import LoginService from '../services/LoginService';
-import Message from '../elements/Message';
-import Error from '../elements/Error';
 import {
   COMMON_FIELDS,
   REGISTRATION_FIELDS,
   LOGIN_FIELDS,
   LOGIN_MESSAGE,
   ERROR_IN_LOGIN,
-} from '../MessageBundle';
+} from './MessageBundle';
 
 class Login extends Component {
   constructor(props) {
@@ -103,8 +101,6 @@ class Login extends Component {
           </div>{' '}
           {' '}
         </form>{' '}
-        {loginSuccess && <Message message={LOGIN_MESSAGE} />}    {' '}
-        {error && <Error message={ERROR_IN_LOGIN} />}    {' '}
       </div>
     );
   }
