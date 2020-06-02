@@ -22,7 +22,7 @@ module.exports = {
     },
     update: function (req, res) {
         db.Goal
-            .findOneAndUpdate({ _id: req.params.id }, req.body)
+            .updateOne({ _id: req.params.id }, req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },

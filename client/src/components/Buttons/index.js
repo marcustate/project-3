@@ -3,7 +3,7 @@ import React from "react";
 export function SubmitBtn(props) {
     return (
 
-        <button {...props} className="btn  btn-success  btn-lg mt-3">
+        <button {...props} className="btn btn-success mt-3">Add Goal
             {props.children}
         </button>
     );
@@ -11,7 +11,7 @@ export function SubmitBtn(props) {
 
 export function ClearBtn(props) {
     return (
-        <button {...props} className="btn btn-danger btn-large mt-3  text-capitalize">Clear List
+        <button {...props} className="btn btn-danger text-capitalize">Delete
             {props.children}
         </button>
     );

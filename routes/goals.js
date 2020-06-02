@@ -3,15 +3,15 @@ const goalsController = require("../controllers/goalsController");
 
 router.route("/")
   .get(goalsController.findAll)
-  .post(goalsController.create);
+  .post(goalsController.create)
 
-  // router
-  // .route("/tracker")
-  // .get(goalsController);
+  router.route("/api/goals")
+  // .get(goalsController)
+  // .post(goalsController);
 
-router
-  .route("/:id")
+router.route("/:id")
   .get(goalsController.findById)
+  .post(goalsController.create)
   .put(goalsController.update)
   .delete(goalsController.remove);
 

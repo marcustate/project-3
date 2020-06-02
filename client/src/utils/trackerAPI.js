@@ -1,8 +1,9 @@
 import axios from "axios";
 
 export default {
-    getGoals: function() {
+    getGoals: function(query) {
         return axios.get("/api/goals/");
+        //return axios.get("/api/goals/", { params: { q: query }});
     },
 
     getGoal: function(id) {
@@ -10,10 +11,10 @@ export default {
     },
 
     deleteGoal: function(id) {
-        return axios.post("/api/goals/" + id);
+        return axios.delete("/api/goals/" + id);
     },
 
-    addGoal: function(goalData) {
-        return axios.post("/api/goals", goalData)
+    saveGoal: function(data) {
+        return axios.post("/api/goals", data)
     }
 };
