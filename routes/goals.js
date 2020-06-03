@@ -5,9 +5,7 @@ router.route("/")
   .get(goalsController.findAll)
   .post(goalsController.create)
 
-  router.route("/api/goals")
-  // .get(goalsController)
-  // .post(goalsController);
+router.route("/api/goals")
 
 router.route("/:id")
   .get(goalsController.findById)

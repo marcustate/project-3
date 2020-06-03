@@ -99,28 +99,19 @@ div.col-md-12 {
 .exercPic {
     display: flex;
     width: 25%;
-    /* padding: 5px;
-    margin-left: 20px; */
 }
 
 .journPic { 
     display: flex;
     width: 25%;
-    /* padding: 5px;
-    margin-left: 150px; */
 }
 
 .waterPic{  
     display: flex;
     width: 25%;
-    /* padding: 5px;
-    margin-left: 280px;
-    margin-bottom: 10px; */
 }
 
 .graphPic { 
     display: flex;
     width: 25%;
-    /* padding: 5px;
-    margin-left: 370px; */
 }

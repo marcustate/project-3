@@ -5,11 +5,9 @@ import "./style.css";
 
 export function List({ children }) {
     return (
-        // <div className="text-capitalize text-center"><h4>Tracked Goals</h4>
             <div className="list-overflow-container">
                 <ul className="list-group my-5">{children}</ul>
             </div>
-        // </div>
     );
 }
 
