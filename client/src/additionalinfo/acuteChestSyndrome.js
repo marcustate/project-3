@@ -7,7 +7,7 @@ function acuteChestSyndrome() {
         <div className="maincontainer">
             <div className="row">
                 <div className="col-10 mx-auto col-md-8 mt-4">
-                    <h3 className="text-capitalize text Center">Please Search For Other Diagnoses Related to Sickle Cell Anemia </h3>
+                    <h3 className="text-capitalize text-center">Please Search For Other Diagnoses Related to Sickle Cell Anemia </h3>
                 </div>
             </div>
 

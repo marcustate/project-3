@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link, withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Navbar extends Component {
     logOut(e) {
@@ -23,7 +23,7 @@ class Navbar extends Component {
                 </li>
             </ul>
         )
-        
+
         const userLink = (
             <ul className="navbar-nav">
                 <li className="nav-item">
@@ -31,7 +31,7 @@ class Navbar extends Component {
                         User
                     </Link>
                     <li className="nav-item">
-                       <a href="" onClick={this.logOut.bind(this)} className="nav-link">
+                        <a href="" onClick={this.logOut.bind(this)} className="nav-link">
                             Logout
                         </a>
                     </li>
@@ -40,10 +40,30 @@ class Navbar extends Component {
         )
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-                <button className="navbar-toggler">
-                    type=
+                <button className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="navbar1"
+                    aria-controls="navbar1"
+                    aria-expanded="false"
+                    aria-lable="toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
+
+                <div className="collapse navbar-collapse justify-content-md-center" id="navbar1">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link to="/" className="nav-link">
+                                Home
+                                </Link>
+                        </li>
+                    </ul>
+                    {localStorage.usertoken ? userLink : loginRegLink}
+                </div>
+
             </nav>
         )
     }
 }
+
+export default withRouter(Navbar);

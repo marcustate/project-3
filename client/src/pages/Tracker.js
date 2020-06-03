@@ -28,16 +28,25 @@ function Goals() {
     };
 
     function addGoal(event) {
+        const { name, value } = event.target;
+        setWellnesInput({ ...wellnessInput, [name]: value })
+        // event.preventDefault();
+        // trackerAPI.addGoal(wellnessInput)
+        //     .then(res => loadGoals())
+        //     .catch(err => console.log(err));
+    };
+
+    function handleAddGoal(event) {
         event.preventDefault();
-        trackerAPI.addGoal(wellnessInput)
-        .then (res => loadGoals())
-        .catch (err => console.log(err));
+        trackerAPI.saveGoal(wellnessInput)
+            .then(res => loadGoals())
+            .catch(err => console.log(err));
     };
 
     function deleteGoal(id) {
         trackerAPI.deleteGoal(id)
-        .then(res => loadGoals())
-        .catch(err => console.log(err));
+            .then(res => loadGoals())
+            .catch(err => console.log(err));
     };
 
     return (
@@ -45,13 +54,13 @@ function Goals() {
             <Row>
                 <Col size="md-6">
                     <Jumbotron>
-                    <h3>Wellness Track of Sickle Cell</h3>
+                        <h3>Wellness Track of Sickle Cell</h3>
                     </Jumbotron>
 
                     <article>
                         <div className="row">
                             <div className="col-10 mx-auto col-md-8 mt-4">
-                                <h3 className="text-capitalize text Center">Please Track Your Health Statistics Below</h3>
+                                <h4 className="text-capitalize text-center">Enter Your Daily Goals</h4>
                             </div>
                         </div>
 
@@ -59,22 +68,36 @@ function Goals() {
 
                             <div>
                                 <Input
-                                    onChange={(e) => setWellnesInput(e.target.value)}
+                                    // onChange={(e) => setWellnesInput(e.target.value)}
+                                    onChange={addGoal}
                                     name="wellnessInput"
                                     placeholder="Wellness input (required)"
                                 />
-                                <SubmitBtn onClick={addGoal}>Add Item</SubmitBtn>
+                                <SubmitBtn onClick={handleAddGoal}></SubmitBtn>
                             </div>
                         </div>
 
+                        <div className="col-md-12">
+                            <div className="exercPic"><img src={Exercise} alt="Cause pic" width="110" height="110" /></div>
+                            <div className="journPic"><img src={Journaling} alt="Cause pic" width="110" height="110" /></div>
+                            <div className="waterPic"><img src={Water} alt="Cause pic" width="110" height="110" /></div>
+                            <div className="graphPic" ><img src={Graph} alt="Cause pic" width="110" height="110" /></div>
+                        </div>
+
+                    </article>
+                </Col>
+
+                <Col size="md-6">
+                    <Jumbotron>
+                        <h3>Tracked Goals</h3>
+                    </Jumbotron>
+                    <article>
                         {goals.length ? (
                             <List>
                                 {goals.map(goal => {
                                     return (
                                         <ListItem key={goal._id}>
-                                            <a href={"/trackerApi/goals/" + goal._id}>
                                             {goal.wellnessInput}
-                                            </a>
                                             <ClearBtn onClick={() => deleteGoal(goal._id)} />
                                         </ListItem>
                                     );
@@ -84,20 +107,6 @@ function Goals() {
                                 <h4>No Results to Display</h4>
                             )}
                     </article>
-                </Col>
-
-                <Col size="md-6">
-                    <Jumbotron>
-                    <h3>Recommended Daily Goals</h3>
-                    </Jumbotron>
-           
-                    <aside>
-                        <div className="exercPic"><img src={Exercise} alt="Cause pic" width="150" height="150" /></div>
-                        <div className="journPic"><img src={Journaling} alt="Cause pic" width="150" height="150" /></div>
-                        <div className="waterPic"><img src={Water} alt="Cause pic" width="150" height="150" /></div>
-                        <div className="graphPic" ><img src={Graph} alt="Cause pic" width="150" height="150" /></div>
-                    </aside>
-        
                 </Col>
             </Row >
         </Container >

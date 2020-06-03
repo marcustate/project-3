@@ -1,19 +1,20 @@
 import axios from "axios";
 
 export default {
-    getGoals: function() {
-        return axios.get("/tracker/goals");
+    getGoals: function(query) {
+        return axios.get("/api/goals/");
+        //return axios.get("/api/goals/", { params: { q: query }});
     },
 
     getGoal: function(id) {
-        return axios.get("/tracker/goals/" + id);
+        return axios.get("/api/goals/" + id);
     },
 
     deleteGoal: function(id) {
-        return axios.post("/tracker/goals" + id);
+        return axios.delete("/api/goals/" + id);
     },
 
-    addGoal: function(goalData) {
-        return axios.post("/tracker", goalData)
+    saveGoal: function(data) {
+        return axios.post("/api/goals", data)
     }
 };
