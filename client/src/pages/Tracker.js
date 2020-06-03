@@ -14,7 +14,7 @@ import "./tracker.css";
 function Goals() {
 
     const [goals, setGoals] = useState([])
-    const [wellnessInput, setWellnesInput] = useState("")
+    const [wellnessInput, setWellnessInput] = useState("")
 
     useEffect(() => {
         loadGoals()
@@ -29,17 +29,13 @@ function Goals() {
 
     function addGoal(event) {
         const { name, value } = event.target;
-        setWellnesInput({ ...wellnessInput, [name]: value })
-        // event.preventDefault();
-        // trackerAPI.addGoal(wellnessInput)
-        //     .then(res => loadGoals())
-        //     .catch(err => console.log(err));
+        setWellnessInput({ ...wellnessInput, [name]: value })
     };
 
     function handleAddGoal(event) {
         event.preventDefault();
         trackerAPI.saveGoal(wellnessInput)
-            .then(res => loadGoals())
+            .then(res => { document.querySelector("#name1").value=""; loadGoals() })
             .catch(err => console.log(err));
     };
 
@@ -68,7 +64,7 @@ function Goals() {
 
                             <div>
                                 <Input
-                                    // onChange={(e) => setWellnesInput(e.target.value)}
+                                    id="name1"
                                     onChange={addGoal}
                                     name="wellnessInput"
                                     placeholder="Wellness input (required)"
