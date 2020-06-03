@@ -14,12 +14,12 @@ const UserSchema = new Schema({
         match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
         required: [true, "can't be blank"]
     },
-    user_name: {
+    email: {
         type: String,
         lowercase: true,
         unique: true,
         required: [true, "can't be blank"],
-        match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
+        isEmail: true,
         index: true,
     },
     password: {
@@ -27,8 +27,8 @@ const UserSchema = new Schema({
         required: true,
         trim: true
     }
-}, {
-    collection: 'User'
 });
 
-module.exports = mongoose.model('User', UserSchema);
+const User = mongoose.model("User", UserSchema);
+
+module.exports = User;

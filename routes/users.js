@@ -1,15 +1,13 @@
 const express = require("express");
-const users = require.Router();
-const cors = require("cors");
+const router = express.Router();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-const User = require("../models/User");
-users.use(cors())
+const db = require("../models/");
 
 process.env.SECRET_KEY = "secret"
 
-users.post("/register", (req, res) => {
+router.post("/register", (req, res) => {
     const today = new Date()
     const userData = {
         first_name: req.body.first_name,
@@ -19,16 +17,16 @@ users.post("/register", (req, res) => {
         created: today
 
     }
-    User.findOne({
+    db.User.findOne({
         email: req.body.email
     })
         .then(user => {
             if (!user) {
-                bcrypt.hash(req.body.password, 10, (err, hash) {
+                bcrypt.hash(req.body.password, 10, (err, hash) => {
                     userData.password = hash
-                    User.create(userData)
+                    db.User.create(userData)
                         .then(user => {
-                            res.json({ status: user.email + "registered" })
+                            res.json({ status:"Success!", userId: user._id })
                         })
                         .catch(err => {
                             res.send("error:" + err)
@@ -43,8 +41,8 @@ users.post("/register", (req, res) => {
         })
 })
 
-users.post("/login", (req, res) => {
-    User.findOne({
+router.post("/login", (req, res) => {
+    db.User.findOne({
         email: req.body.email
     })
         .then(user => {
@@ -72,10 +70,10 @@ users.post("/login", (req, res) => {
         })
 })
 
-users.get("/profile", (req, res) => {
+router.get("/profile", (req, res) => {
     var decoded = jwt.verify(req.headers["authorization"], process.env.SECRET_KEY)
 
-    User.findOne({
+    db.User.findOne({
         _id: decoded._id
     })
         .then(user => {
@@ -90,4 +88,4 @@ users.get("/profile", (req, res) => {
         })
 })
 
-module.exports = users
+module.exports = router

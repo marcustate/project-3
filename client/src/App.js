@@ -10,8 +10,7 @@ import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
 import ResourcesPage from "../src/pages/ResourcesPage";
-import Login from "./containers/login";
-import Register from "./containers/register";
+import Register from "./pages/Register";
 
 
 
@@ -20,9 +19,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Login />
-        <Register />
-
+       
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
         <Route path="/tracker" component={Tracker} />
@@ -30,6 +27,7 @@ function App() {
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
         {/* <Route path="/resourcesPage" component={ResourcesPage} /> */}
+        <Route path="/register" component={Register} />
 
       </div>
 
