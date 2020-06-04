@@ -7,7 +7,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                <Link className="navbar-brand" to="/">Cell</Link>
+                <Link className="navbar-brand" to="/register">Cell</Link>
 
                 <div>
                     <ul className="navbar-nav">
