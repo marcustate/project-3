@@ -11,6 +11,7 @@ import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
 import ResourcesPage from "../src/pages/ResourcesPage";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 
@@ -26,9 +27,9 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
-        {/* <Route path="/resourcesPage" component={ResourcesPage} /> */}
+        <Route path="/resourcesPage" component={ResourcesPage} />
         <Route path="/register" component={Register} />
-
+        <Route path="/login" component={Register} />
       </div>
 
         <Footer />
