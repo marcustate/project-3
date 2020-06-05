@@ -23,9 +23,11 @@ class Register extends Component {
         }
         API.registerUser(newUser).then(function (response) {
             console.log(response)
-            if(response.data.status === "Success!") {
+            if (response.status === 200) {
+                localStorage.setItem("token", response.data)
+                window.location.replace("home")
                 console.log("User Registered!")
-            }
+                        }
         })
     }
     render() {

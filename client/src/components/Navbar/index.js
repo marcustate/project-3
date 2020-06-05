@@ -7,7 +7,10 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                <Link className="navbar-brand" to="/register">Cell</Link>
+                <Link className="navbar-brand" to="/login"
+                    className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"} >
+                    Cell
+                    </Link>
 
                 <div>
                     <ul className="navbar-nav">
