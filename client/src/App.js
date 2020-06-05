@@ -5,7 +5,7 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import "./index.css";
 import System from "../src/pages/System";
-import Tracker from "../src/pages/Tracker";
+import Wellness from "./pages/wellnessTracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
@@ -23,7 +23,7 @@ function App() {
        
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
-        <Route path="/tracker" component={Tracker} />
+        <Route path="/wellness" component={Wellness} />
         <Route path="/search" component={Search} />
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
