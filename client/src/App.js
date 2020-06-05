@@ -20,10 +20,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-<<<<<<< HEAD
-=======
        
->>>>>>> 542b38bae631913e01a517fcbcb505b82e367d68
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
         <Route path="/wellness" component={Wellness} />
@@ -31,12 +28,8 @@ function App() {
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
         <Route path="/resourcesPage" component={ResourcesPage} />
-<<<<<<< HEAD
-
-=======
         <Route path="/register" component={Register} />
         <Route path="/login" component={Register} />
->>>>>>> 542b38bae631913e01a517fcbcb505b82e367d68
       </div>
 
         <Footer />
