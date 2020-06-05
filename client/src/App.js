@@ -10,6 +10,8 @@ import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
 import SearchButtons from "../src/pages/SearchButtons";
 import ResourcesPage from "../src/pages/ResourcesPage";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 
@@ -18,7 +20,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-
+       
         <Route path="/home" exact component={Home} />
         <Route path="/system" component={System} />
         <Route path="/tracker" component={Tracker} />
@@ -26,11 +28,11 @@ function App() {
         <Route path="/generalInformation" component={GeneralInformation} />
         <Route path="/searchButtons" component={SearchButtons} />
         <Route path="/resourcesPage" component={ResourcesPage} />
-
-
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Register} />
       </div>
 
-      <Footer />
+        <Footer />
     </Router>
   );
 }
