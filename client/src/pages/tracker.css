@@ -1,92 +1,15 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+body {
+    background-image: url(../assets/lightpaperfibers.png);
+    background-size: cover;
+  }
 
-.headline {
-    grid-area: headline;
-    text-align: center;
-}
-
-.header {
-    grid-area: hdr;
-    text-align: center;
-    font-size: 50px;
-    border-radius: 1px;
-    border-color:#563f46;
-    border-style: solid;
-    background-color: #8ca3a3;
-}
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.panel {
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 1 1 200px;
-    font-size: 30px;
-}
-    
-.innerheader {
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 0 1 100%;
-    grid-column: 1 / -1;
-
-}
-
-article {
+/* article {
     grid-area: article;
     border-radius: 1px;   
     border-color:#156c73;
     border-style: solid;
-    background-color: #c8c3cc;  
-}
-
-aside {
-    grid-area: aside;
-    border-radius: 1px;    
-    border-color:#156c73;
-    border-style: solid;
-    background-color: #c8c3cc;  
-}
-
-.maincontainer {
-    display:grid;
-    grid-template-areas: 
-    "headline"
-    "hdr"
-    "article"
-    "aside"
-    "foot"; 
-}
-
-.impacts {
-    font-weight: bolder;
-    color: #8ca3a3
-}
-
-.aside-title {
-    font-weight: bolder;
-    color:#563f46;
-    font-size: 30px;
-}
-
-@media(min-width: 640px ) {
-    .maincontainer {
-        grid-template-columns: 2fr 6fr;
-       
-        grid-template-areas: 
-        "headline    headline"
-        "hdr    hdr"
-        "aside  article"
-        "foot   foot";
-    }
-}
+    background-color: #ccc3c3;  
+} */
 
 div.col-md-12 {
     display: flex;
@@ -114,4 +37,15 @@ div.col-md-12 {
 .graphPic { 
     display: flex;
     width: 25%;
+}
+
+@media(min-width: 640px ) {
+    .maincontainer {
+        grid-template-columns: 2fr 6fr;
+        grid-template-areas: 
+        "headline    headline"
+        "hdr    hdr"
+        "aside  article"
+        "foot   foot";
+    }
 }
