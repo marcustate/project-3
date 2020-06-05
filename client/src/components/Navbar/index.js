@@ -8,9 +8,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
 
-                <Link className="navbar-brand" to="/">
-                    <h5>Cell</h5>
-                </Link>
+                <Link className="navbar-brand" to="/register">Cell</Link>
 
                 <div>
                     <ul className="navbar-nav">
