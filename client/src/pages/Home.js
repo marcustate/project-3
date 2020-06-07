@@ -6,6 +6,7 @@ import Gallblader from './assets/gallblader.jpeg'
 import Heart from './assets/heart.png'
 import Kidneys from './assets/kidneys.jpeg'
 import Lungs from './assets/lungs.jpeg'
+import { Link } from "react-router-dom";
 
 
 
@@ -124,7 +125,10 @@ function Home() {
                 <div className="tracker-link">
                     <h5>Manage by Keeping Track</h5>
                     <p >Please use the link below to track your health stats and journal about your daily health condition. This will provide you with insights to live a healthy and happy life.</p>
-                    <button type="button" class="tracker-button">Track Info</button> </div>
+                    <button type="button" class="tracker-button"> <Link to="/tracker"
+                        className={window.location.pathname === "/tracker" ? "nav-link active" : "nav-link"}>
+                        <h5>Tracker Info</h5>
+                    </Link></button> </div>
 
 
             </aside>
