@@ -1,4 +1,5 @@
 import axios from "axios";
+import setAuthToken from "./auth";
 
 export default {
     getDoctor: function () {
@@ -17,6 +18,12 @@ export default {
         return axios.post("/api/users/register", userdata)
     },
     loginUser: function (userdata) {
-        return axios.post("/api/users/login")
+        return axios.post("/api/users/login", userdata)
     },
+    getUser: function() {
+        if (localStorage.token) {
+            setAuthToken(localStorage.token);
+        }
+        return axios.get("/api/users/profile")
+    }
 };

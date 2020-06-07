@@ -29,7 +29,7 @@ function App() {
         <Route path="/searchButtons" component={SearchButtons} />
         <Route path="/resourcesPage" component={ResourcesPage} />
         <Route path="/register" component={Register} />
-        <Route path="/login" component={Register} />
+        <Route path="/login" component={Login} />
       </div>
 
         <Footer />

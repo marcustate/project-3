@@ -18,9 +18,11 @@ class Login extends Component {
             password: this.state.password
 
         }
-        API.LoginUser(newUser).then(function (response) {
+        API.loginUser(newUser).then(function (response) {
             console.log(response)
-            if (response.data.status === "Success!") {
+            if (response.status === 200) {
+                localStorage.setItem("token", response.data)
+                window.location.replace("home")
                 console.log("User Login!")
             }
         })
@@ -43,7 +45,7 @@ class Login extends Component {
                     placeholder="Enter your password"
                 />
                 <button onClick={this.userLogin}
-                >Submit</button>
+                >Login</button>
             </form>
         )
     }
