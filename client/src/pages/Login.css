@@ -1,0 +1,43 @@
+form {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+  margin-top: 300px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+label {
+  grid-column: 1/2;
+  height: 50px;
+  font-size: 30px;
+}
+
+input {
+  grid-column: 2/3;
+  height: 50px;
+}
+
+button {
+  grid-column: 2/3;
+  height: 50px;
+  background-color: crimson;
+  font-size: 25px;
+  margin-right: 500px;
+}
+
+.instructions {
+  grid-column: 1/3;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 600px;
+  border-radius: 5px;
+  border-style: dotted;
+  padding: 45px;
+  width: 1800px;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+}
