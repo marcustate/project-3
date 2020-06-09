@@ -74,7 +74,7 @@ function Home() {
                         <div ClassName="content">
                             <ul>
                                 <li>Bacterial Pneumonias Prevalent</li>
-                                <li>Acute Chest Syndrome></li>
+                                <li>Acute Chest Syndrome</li>
                                 <li>Restrictive Ventilatory Defect</li>
                                 <li>Others</li>
                             </ul>
@@ -112,7 +112,7 @@ function Home() {
                 <ul className="list-group">
                     <li className="list-item">Stay Hydrated</li>
                     <hr></hr>
-                    <li className="list-item">Learn My Triggers for Pain Crises</li>
+                    <li className="list-item">Learn Your Triggers for Pain Crises</li>
                     <hr></hr>
                     <li className="list-item">Eat a Well Balanced Diet</li>
                     <hr></hr>

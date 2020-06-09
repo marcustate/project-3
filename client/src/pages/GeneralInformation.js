@@ -18,17 +18,17 @@ function GeneralInformation() {
             <header>Understanding Sickle Cell Anemia</header>
             <article>
                 <h3>What It Is</h3>
-                <p>Sickle Cell Anemias is an inherited red blood cell disorder "caused by a mutation in teh Hemoglobin-Beta Gebe found on Chromose 11[4]". In normal individuals red blood cells are smooth and shaped somewhat like a donut without a hole in the middle. This makes them bendable so that they will easily pass through blood vessels to carry oxygen throughout the body. In sickle cell disease some red blood cells can for into sickle or crescent shapes. This makes them sticky and sharp and results in them getting stuck in blood vessel walls. [1] </p>
+                <p>Sickle Cell Anemia is an inherited red blood cell disorder "caused by a mutation in the Hemoglobin-Beta Gene found on Chromose 11[4]". In normal individuals red blood cells are smooth and shaped somewhat like a donut without a hole in the middle. This makes them bendable so that they will easily pass through blood vessels to carry oxygen throughout the body. In sickle cell disease some red blood cells can turn into sickle or crescent shapes. This makes them sticky and sharp and results in them getting stuck in blood vessel walls. [1] </p>
                 <h3>Who Has Sickle Cell Anemia</h3>
-                <p>Scientists have tracked the origin of the disease to a genetic mutation that occurred over 7,300 years ago in the Green Sahara. This mutation  came with an important advantage for people of that region in that one affected chormose can protect its carrier against malaria[5]. This disease is thus more common in certain ethnic groups: </p>
+                <p>Scientists have tracked the origin of the disease to a genetic mutation that occurred over 7,300 years ago in the Green Sahara. This mutation  came with an important advantage for people of that region in that one affected chromosome can protect its carrier against malaria[5]. This disease is thus more common in certain ethnic groups: </p>
                 <ul>
                     <li>People of African descent,including African-Americans[2]</li>
                     <li>Hispanic-Americans from Central and South America[2]</li>
-                    <li>Peopleof Middle Easter, Asian, Indian and Medieterranean Descent[2]</li>
-                    <li>It can also present in Greeks, Sicillians,French Corsicans and other nationalities[3]</li>
+                    <li>People of Middle Eastern, Asian, Indian and Medieterranean Descent[2]</li>
+                    <li>It can also be present in Greeks, Sicillians, French Corsicans and other nationalities[3]</li>
                 </ul>
                 <h3>Signs and Symptoms</h3>
-                <p>"Screening for Sickle Cell at birth is currently mandatory in the United States. For the first 6 months of life, infants are protected largely by elevated levels of fetal hemoglobing. Sickle cell disease usually manifests eary in childhood, the condition becomese evident as follows.[6]</p>
+                <p>"Screening for Sickle Cell at birth is currently mandatory in the United States. For the first 6 months of life, infants are protected largely by elevated levels of fetal hemoglobin. Sickle cell disease usually manifests eary in childhood, the condition becomese evident as follows.[6]</p>
                 <table className="table table-sm table-striped table-bordered">
                     <thead>
                         <tr>
