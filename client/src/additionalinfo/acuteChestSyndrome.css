@@ -1,0 +1,17 @@
+div.main-column {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+div.table {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+td {
+    font-size: 18px;
+    text-align: left;
+}
