@@ -25,22 +25,23 @@ function App() {
         <Navbar />
         <Switch>
 
-          <Route path="/home" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/system" component={System} />
           <Route path="/tracker" component={Tracker} />
           <Route path="/search" component={Search} />
           <Route path="/generalInformation" component={GeneralInformation} />
+          <Route path="/healthInfo" component={HealthInfo} />
           <Route path="/resourcesPage" component={ResourcesPage} />
           <Route path="/login" render={() => (
             (token) ? (
-              <Redirect to="/home" />
+              <Redirect to="/" />
             ) : (
                 <Route path="/login" component={Login} />
               )
           )} />
           <Route path="/register" render={() => (
             (token) ? (
-              <Redirect to="/home" />
+              <Redirect to="/" />
             ) : (
                 <Route path="/register" component={Register} />
               )
