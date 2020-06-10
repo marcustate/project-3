@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
@@ -14,24 +14,42 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 
+const token = localStorage.getItem("token")
+
+
+
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-       
-        <Route path="/home" exact component={Home} />
-        <Route path="/system" component={System} />
-        <Route path="/tracker" component={Tracker} />
-        <Route path="/search" component={Search} />
-        <Route path="/generalInformation" component={GeneralInformation} />
-        <Route path="/healthInfo" component={HealthInfo} />
-        <Route path="/resourcesPage" component={ResourcesPage} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
+        <Switch>
+
+          <Route path="/" exact component={Home} />
+          <Route path="/system" component={System} />
+          <Route path="/tracker" component={Tracker} />
+          <Route path="/search" component={Search} />
+          <Route path="/generalInformation" component={GeneralInformation} />
+          <Route path="/healthInfo" component={HealthInfo} />
+          <Route path="/resourcesPage" component={ResourcesPage} />
+          <Route path="/login" render={() => (
+            (token) ? (
+              <Redirect to="/" />
+            ) : (
+                <Route path="/login" component={Login} />
+              )
+          )} />
+          <Route path="/register" render={() => (
+            (token) ? (
+              <Redirect to="/" />
+            ) : (
+                <Route path="/register" component={Register} />
+              )
+          )} />
+        </Switch>
       </div>
-      
-        <Footer />
+
+      <Footer />
     </Router>
   );
 }
