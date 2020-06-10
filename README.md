@@ -43,8 +43,3 @@ Heroku link:
 ## Other Links
 
 The pattern for app background is downloaded from www.subtlepatterns.com
-
-## Questions
-
-
-

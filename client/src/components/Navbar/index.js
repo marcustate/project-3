@@ -11,11 +11,6 @@ function Navbar() {
                 {(token) ? (
                     <ul className="navbar-nav">
 
-                        <Link className="navbar-brand" to="/login"
-                            className={window.location.pathname === "/" ? "nav-link active" : "nav-link"} >
-                            <h5>Login</h5>
-                        </Link>
-
                         <li className="nav-item">
 
                             <Link to="/"
