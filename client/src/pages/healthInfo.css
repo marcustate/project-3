@@ -1,4 +1,4 @@
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -7,70 +7,80 @@
 .headline {
     grid-area: headline;
     text-align: center;
-}
+} */
 
-.header {
-    grid-area: hdr;
-    
+header {
+    /* grid-area: hdr;
     text-align: center;
     font-size: 50px;
     border-radius: 1px;
     border-color:#563f46;
     border-style: solid;
-    background-color: #8ca3a3;
-    
+    background-color: #8ca3a3; */
 
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 1px;
+    border-color:#563f46;
+    border-style: solid;
+    background-color: #8ca3a3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+div.headline {
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
-
-
     
 .innerheader {
     margin-left: 5px;
     margin-right: 5px;
     flex: 0 1 100%;
     grid-column: 1 / -1;
-
-}
-
-
-footer {
-    grid-area: foot;
-    border-radius: 1px;
-    border-color:#563f46;
-    border-style: solid;
-    background-color:#8ca3a3;
-    text-align: center;
-   
 }
 
 article {
-    grid-area: article;
+    /* grid-area: article; */
     border-radius: 1px;   
     border-color:#156c73;
     border-style: solid;
-    background-color: #c8c3cc;
-   
+    background-color: #c8c3cc;  
 }
 
 aside {
-    grid-area: aside;
+    /* grid-area: aside; */
     border-radius: 1px;    
     border-color:#156c73;
     border-style: solid;
     background-color: #c8c3cc;
-
-   
-    
 }
 
+div.quest {
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
 
+.searchPic {
+    align-content: center;   
+    padding: 60px;
+    margin-left: 90px;
+}
 
-.maincontainer {
+a.list-group-item.list-group-item-action {
+    font-size: 18px;
+}
+
+/* .maincontainer {
     display:grid;
     grid-gap:20px;    
     grid-template-areas: 
@@ -80,31 +90,16 @@ aside {
     "aside"
     "foot";
   
-}
-
-
+} */
 
 @media(min-width: 640px ) {
     .maincontainer {
         grid-template-columns: 2fr 6fr;
-       
         grid-template-areas: 
         "headline    headline"
         "hdr    hdr"
         "aside  article"
         "foot   foot";
     }
-}
-
-.quest {
-    font-size: 30px;
-}
-.searchPic {
-
-    align-content: center;   
-    padding: 80px;
-    margin-left: 65px;
-   
-
 }
 
