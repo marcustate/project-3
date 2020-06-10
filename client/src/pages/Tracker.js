@@ -35,7 +35,7 @@ function Goals() {
     function handleAddGoal(event) {
         event.preventDefault();
         trackerAPI.saveGoal(wellnessInput)
-            .then(res => { document.querySelector("#name1").value=""; loadGoals() })
+            .then(res => { document.querySelector("#name1").value = ""; loadGoals() })
             .catch(err => console.log(err));
     };
 
@@ -74,10 +74,12 @@ function Goals() {
                         </div>
 
                         <div className="col-md-12">
-                            <div className="exercPic"><img src={Exercise} alt="Cause pic" width="110" height="110" /></div>
-                            <div className="journPic"><img src={Journaling} alt="Cause pic" width="110" height="110" /></div>
-                            <div className="waterPic"><img src={Water} alt="Cause pic" width="110" height="110" /></div>
-                            <div className="graphPic" ><img src={Graph} alt="Cause pic" width="110" height="110" /></div>
+                            <div className="pictures">
+                                <div className="exercPic"><img src={Exercise} alt="Cause pic" width="110" height="110" /></div>
+                                <div className="journPic"><img src={Journaling} alt="Cause pic" width="110" height="110" /></div>
+                                <div className="waterPic"><img src={Water} alt="Cause pic" width="110" height="110" /></div>
+                                <div className="graphPic" ><img src={Graph} alt="Cause pic" width="110" height="110" /></div>
+                            </div>
                         </div>
 
                     </article>

@@ -8,7 +8,7 @@ import System from "../src/pages/System";
 import Tracker from "../src/pages/Tracker";
 import Search from "../src/pages/Search";
 import GeneralInformation from "../src/pages/GeneralInformation";
-import SearchButtons from "../src/pages/SearchButtons";
+import HealthInfo from "../src/pages/HealthInfo";
 import ResourcesPage from "../src/pages/ResourcesPage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -30,7 +30,6 @@ function App() {
           <Route path="/tracker" component={Tracker} />
           <Route path="/search" component={Search} />
           <Route path="/generalInformation" component={GeneralInformation} />
-          <Route path="/searchButtons" component={SearchButtons} />
           <Route path="/resourcesPage" component={ResourcesPage} />
           <Route path="/login" render={() => (
             (token) ? (

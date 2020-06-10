@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import "./Login.css";
 
 class Login extends Component {
     state = {
@@ -29,24 +30,36 @@ class Login extends Component {
     }
     render() {
         return (
-            <form className="form">
-                <input
-                    value={this.state.email}
-                    name="email"
-                    onChange={this.handleInputChange}
-                    type="text"
-                    placeholder="Enter your email"
-                />
-                <input
-                    value={this.state.password}
-                    name="password"
-                    onChange={this.handleInputChange}
-                    type="text"
-                    placeholder="Enter your password"
-                />
-                <button onClick={this.userLogin}
-                >Login</button>
-            </form>
+
+            <div>
+                <form className="form">
+                    <label for="email" className="email">Email</label>
+                    <input
+                        value={this.state.email}
+                        name="email"
+                        onChange={this.handleInputChange}
+                        type="text"
+                        placeholder="Enter your email"
+                    />
+                    <label for="password" className="password">Password</label>
+                    <input
+                        value={this.state.password}
+                        name="password"
+                        onChange={this.handleInputChange}
+                        type="text"
+                        placeholder="Enter your password"
+                    />
+                    <button className="button" onClick={this.userLogin}
+                    >Login</button>
+                </form>
+
+
+                <div className="instructions">
+                    <p>Welcome to your Sickle Cell Anemia Tracker. Please enter your username and password above to access your information</p>
+                </div>
+            </div>
+
+
         )
     }
 }
