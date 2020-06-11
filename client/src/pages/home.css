@@ -1,7 +1,3 @@
-/* * {
-    box-sizing:border-box;  
-} */
-
 div.headline {
     padding-bottom: 15px;
     text-align: center;
@@ -59,7 +55,8 @@ div.subtitle-home {
     text-align: left;
 }
 
-p {
+div.answer-home {
+    font-size: 18px;
     margin-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
@@ -72,44 +69,14 @@ div.table-home {
     padding-left: 20px;
     padding-right: 20px;
 }
-   
-    
 
-/* ul {
-    margin-bottom: 0px;
+div.group-people {
+    font-size: 18px;
+    padding-top: 5px;
     padding-left: 100px;
     padding-right: 20px;
     text-align: justify;
-} */
-
-/* .title {
-    font-size: 30px;
-    color: #8fb0b3;
-
 }
-
-.list-group{
-    margin-bottom:50px ;
-    padding:5px;
-    
-}
-
-.list-item {
-    font-size: 25px;
-    background-color: #c8c3cc
-   
-} */
-
-/* .maincontainer {
-    display:grid;
-    grid-gap:20px;    
-    grid-template-areas: 
-    "headline"
-    "hdr"
-    "article"
-    "aside"
-    "foot"; 
-} */
 
 @media(min-width: 640px ) {
     .maincontainer {
@@ -122,16 +89,3 @@ div.table-home {
         "foot   foot";
     }
 }
-
-/* .table {
-    font-size: 20px;
-} */
-
-/* .card {
-    background-color: lightslategrey;
-}
-
-.card-title {
-    font-size: 30px;
-} */
-

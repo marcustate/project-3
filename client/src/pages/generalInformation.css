@@ -1,23 +1,4 @@
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-} */
-
-/* .headline {
-    grid-area: headline;
-    text-align: center;
-}  */
-/* div.row {
-    width: 96%;
-    /* margin-right: 5%;
-    margin-left: 5%; */
-
-/* } */
-
 header {
-    /* grid-area: hdr; */
-    /* width: 90%; */
     text-align: center;
     font-size: 28px;
     font-weight: bold;
@@ -45,7 +26,6 @@ div.headline {
     padding-left: 25px;
     margin-left: 40px;
     margin-right: 20px;
-    /* float: right; */
     font-size: 24px;
 }
     
@@ -54,12 +34,9 @@ header.innerheader {
     margin-right: 0px;
     font-size: 26px;
     font-weight: bold;
-    /* flex: 0 1 100%; */
-    /* grid-column: 1 / -1; */
 }
 
 article {
-    /* grid-area: article; */
     border-radius: 1px;   
     border-color:#156c73;
     border-style: solid;
@@ -67,7 +44,6 @@ article {
 }
 
 aside {
-    /* grid-area: aside; */
     border-radius: 1px;    
     border-color:#156c73;
     border-style: solid;
@@ -76,11 +52,26 @@ aside {
 
 div.trackInfo {
     text-align: justify;
+    font-size: 18px;
+
 }
 
-button.tracker-button {
-    margin-left: 10px;
-    background-color:#c8c3cc
+button.buttonTrack {
+    margin-top: 5px;
+    margin-left: 190px;
+    background-color:#c8c3cc;
+    border-radius: 10px;
+    border-color: black;
+}
+
+a.tracker-button {
+    color: black;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: black !important;
 }
 
 div.tracker-link {
@@ -90,17 +81,6 @@ div.tracker-link {
     border-style: solid;
     background-color:#8ca3a3;
 }
-
-/* .maincontainer {
-    display:grid;
-    grid-gap:20px;    
-    grid-template-areas: 
-    "headline"
-    "hdr"
-    "article"
-    "aside"
-    "foot";
-} */
 
 div.impacts {
     font-size: 20px;
